@@ -1,0 +1,5 @@
+Access Modifiers
+    We have three access modifiers:
+     - public: We can access from anywhere, inside of the class or outside of code block of class
+     - protected: We can only access from the current class and from classes inheritanced
+     - private: We can only access fromt he current class

@@ -1,0 +1,78 @@
+Classes & Objects
+    Definition:
+     - This is like a custom type where we want to encapsulate the logic 
+       of an object. E.g String is a type that represents a plain text
+     - This is a blueprint of something we want to create custom
+    
+    Creating a class:
+     - We just need to use "class" keyword
+       e.g class Book{}
+    
+    Constructor:
+     - This is a special function which is called when we create an object of that class
+     - we need to use a special syntax:
+       function __construct(...){...}
+    
+    this keyword:
+     - we can use the "this" keyword to reference the current object
+     - we can use for example in our constructor to initialize the fields
+       $this->fieldName = value;
+    
+
+    Instance members:
+     - All the variables(fields) and functions defined in our classes are by 
+       default instance unless we explicitly defined the opposite!
+     - To define an instance field(property) we use "var" or "public" keyword
+       var and public keyword are the same, but in modern php is used "public"
+       - e.g public $fieldName = value;
+     - To define a function(method) We just define a function inside of our class and 
+       this will be instance method will be access only by instance objects!
+       - e.g function functName(...){...}
+     - To call these we just use "->" syntax:
+       - e.g $instanceName->methodName();
+       - e.g $instanceName->fieldName;
+
+
+    Static members:
+     - We need to explicitly use "static" keyword to define a static member either 
+       can be a method or a field
+       - e.g static function functName(...){...}
+       - e.g static $fieldName = value;
+     - To call these we use double points:
+       - ClassName::staticMethod;
+       - ClassName::$staticField;
+
+
+    Instantiate the class:
+     - To create a new instance of the class, we use "new" keywor
+      e.g  $book1 = new Book;
+
+        
+
+-- php file
+
+  <?php
+    class Book{
+      public $title;
+      public $author;
+      function __construct($title, $author){
+          $this->title = $title;
+          $this->author = $author;
+      }
+
+      function printTitle(){
+          echo $this->title;
+      }
+
+      static function printInfo(){
+        echo "This is a book";
+      }
+
+  }
+
+
+    $book1 = new Book("Game of thrones", "R.R Martin");
+    $book1->printTitle();
+
+    Book::printInfo();
+  ?>

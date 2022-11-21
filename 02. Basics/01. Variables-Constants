@@ -1,0 +1,44 @@
+Variables vs Constants
+    Variables
+     - Containers to store pieces of info we want to track through my program
+    Constants:
+     - Containers to store data we want to re-use, we don't set/modify it
+    
+    Defining variables:
+     - We can define variables just using the syntax:
+     -  $varName = value
+     -  e.g $characterName = "Harold";
+     -      $characterAge = 25;
+    
+    Defining constants:
+     1. Using const 
+        We define our constant at compile time, but is not possible define 
+        constant using this keyword dynamically(at runtime)
+     2. Using define()
+        We use this when we want to define a constant at runtime, but of course 
+        is essential the same than const!
+
+    Differences:
+     - Constants don't change its value and we can't not use in quotes of echo
+     - Variables values can change and we can use inside the quotes of echo!
+
+
+-- site.php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php 
+    $characterName = "Harold";
+    const AGE = 25;
+    define("CITY", "COL");
+        echo"<h1> My website $characterName </h1>";
+        echo AGE;
+    ?>
+</body>
+</html>

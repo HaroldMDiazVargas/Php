@@ -1,0 +1,46 @@
+Operators in php
+    Comparison operators:
+     ==  Equal
+     === Identical
+     !=  Not equal
+     !== Not Identical
+     <>  Same of != 
+     >
+     <
+     >=
+     <=
+     <=> if is less than => return -1
+         if are equal => return 0
+         if is greater => return 1
+
+    Logical operators:
+     and
+     or
+     xor
+     &&
+     ||
+     !
+    
+    String operators:
+     . concatenation strings in another string
+       e.g  $z = $txt1 . $txt2;
+     .= concatenation assignment to concatenate the same string
+       e.g $txt1 .= $txt2;
+    
+    Array Operators:
+     + Union
+     == Equality; same key/value pairs in different order
+     === Identity, same key/value pairs in the same order and same types
+     != Inequality 
+     <> Inequality
+     !== Non-identity, if are not identical
+    
+    Conditional Assinment operators:
+     ?:  Ternary operator
+         e.g  $x = $txt1 === "Hola" ? "IsHola" : "IsMundo";
+     ??  Null coalescing
+         e.g $x = expr1 ?? expr2
+            Returns the value of $x is expr1 exists and is not NULL
+            if expr1 doesn't exist/NULL; the value $x is expr2
+     ??=
+        e.g $_SERVER['PHP_ENV'] ??= 'default';

@@ -1,0 +1,8 @@
+Inheritance
+    Definition:
+     - We can use this to inheritance members to our class from another class
+     - will inhertiance all public and protected members
+    
+    Inheritance:
+     - We just need to use the "extends" keyword when we define our class
+     

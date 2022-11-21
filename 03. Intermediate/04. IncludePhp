@@ -1,0 +1,10 @@
+Include php 
+    Definition:
+     - We can also use this keyword to include all code of another php and make 
+       accessible to our php file
+     - This will allow us to access to:
+       - variables
+       - constants
+       - functions
+       - etc  in the other external files
+

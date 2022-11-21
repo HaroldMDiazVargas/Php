@@ -1,0 +1,4 @@
+die function
+    The die() function is an alias of the exit() function
+    This function takes:
+     - message or status number to print before terminating the script

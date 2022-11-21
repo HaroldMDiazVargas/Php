@@ -1,0 +1,34 @@
+Form GET Method
+    Definition:
+     - We can define our form using HTML and we can define the method to send our data
+     - "get" method indicated we send data as Query String Params!
+    
+    Query String params:
+     - These are string params after question mark appended in our URL
+     - So here the info is exposed!
+     - The name of these query params will be defined in HTML native forms by the 
+       name attribute!
+       In framework such as angular, we can define these query params in our templates!
+
+    Reading Query String params:
+     - To read these params we use $_GET[] function and we pass the name of our 
+       param!
+       e.g $_GET["name"]
+
+<body>
+
+    <form action="site.php" method="get">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age">
+        <button type="submit">Submit info</button>
+    </form>
+
+    <br></br>
+    Your name is <?php  echo $_GET["name"] ?>
+    <br></br>
+    Your age is <?php  echo $_GET["age"] ?>
+
+</body>
+</html> 

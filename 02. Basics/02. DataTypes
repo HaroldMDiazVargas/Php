@@ -1,0 +1,47 @@
+Data types
+    data types in php
+      String:
+       - this is just plain text
+       - to create we just use open-close quotation marks
+      Numbers:
+       Whole numbers
+        - This is integer, can be positive or negative
+       Decimal numbes
+        - We define all number same way, but php internally will difference these
+      Boolean:
+       - This is just a tru/false value: true or false
+      Resources:
+       - This is a special variable holding a reference to an external resource of data
+         such as:
+         - stream(dir handle, file handle)
+         - file
+         - database(mysql, oracle, obdc)
+         - socket
+         - so on
+       - example of resources => https://www.tutorialspoint.com/php-resources
+      Objects:
+       - This is an instance of a class!
+      null:
+       - This is a value stands for Not a value!
+     
+
+
+-- site.php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php 
+        $phrase = "";
+        $age = 30;
+        $gpa = 32.9;
+        $isStudent = true;
+        null;
+    ?>
+</body>
+</html>

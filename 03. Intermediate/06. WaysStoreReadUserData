@@ -1,0 +1,17 @@
+Ways to store/read data
+    localStorage vs cookies vs sessionStorage:
+     Permanence of data:
+     - localStorage keeps the info across browser sessions/pages
+     - sessionStorage keeps the info across browser session/pages
+     - cookies doesn't keep the info across browser session/pages
+     Place to save:
+     - localStorage saves on the local user computer
+     - sessionStorage saves on the local user computer
+     - cookies doesn't save on the local user computer(is embedded)
+     Usage of data:
+     - localStorage is used only for client-side reads, we can't not access from server
+     - sessionStorage is used only for server-side reads, we can't not access from client-side 
+     - cookies can be used for read server-side and also client side
+     Secure:
+     - The most secure are cookies only https or localStorage for our jwt or credentials!
+    

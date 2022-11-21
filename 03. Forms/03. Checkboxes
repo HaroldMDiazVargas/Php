@@ -1,0 +1,33 @@
+Checkboxes
+    Definition:
+     - We can define multiple checkboxes and save these values in a single array
+       to read in our php variable
+    
+    Checkbox:
+     - We need to set name attribute to "name[]"
+     - This name will be the same for group related checkboxes!
+    
+    Reading:
+     - We use $_POST["name"] but without the square brackets!!
+
+
+-- php file 
+<body>
+
+    <form action="site.php" method="post">
+        <label for="apples">Apples</label>
+        <input type="checkbox" name="fruits[]" id="apples" value="apples"><br>
+        <label for="oranges">Oranges</label>
+        <input type="checkbox" name="fruits[]" id="oranges" value="oranges"><br>
+        <label for="pears">Pears</label>
+        <input type="checkbox" name="fruits[]" id="pears" value="pears"><br>
+        <button type="submit">Submit</button>
+
+    </form>
+    <?php 
+    $fruits = $_POST["fruits"];
+    echo $fruits[0];
+    ?>
+    
+
+</body>

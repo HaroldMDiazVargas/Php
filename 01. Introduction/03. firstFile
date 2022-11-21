@@ -1,0 +1,36 @@
+First php file
+    php vs HTML
+      - php is very tighly couple with HTML
+      - So we need to know a basics knowledge of html
+      - We can write html in our php file and will run as usual
+    
+    php tag:
+      - We can create a php tag and inside that we can run our php code
+      - syntax:
+        <?php  ... ?>
+      - Anything we put inside the php tag is considered php code
+    
+
+    echo():
+      - This is a php instruction to print something in the screen
+        e.g echo("Hello World");
+      - We can put inside the quotes any HTML code and it will render in the browser
+
+
+
+
+-- site.php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php 
+        echo("Hello World");
+    ?>
+</body>
+</html>

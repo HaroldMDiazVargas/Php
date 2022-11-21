@@ -1,0 +1,11 @@
+Getters & Setters&
+    Definition:
+     - We can deifne our fields that only can be read/written or both
+    
+    Getter:
+     - We only define a simple function where we return our field, but is important
+       to before have defined our field as private
+    
+    Setter:
+     - We only define a simple function where we modify our field with the value we 
+       pass to it. Is important to before have defined our field as private

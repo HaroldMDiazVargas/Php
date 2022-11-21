@@ -1,0 +1,28 @@
+Numbers in php
+    
+    Operators
+      +
+      -
+      *
+      /
+      %
+      **
+      varName++
+      varName--
+      varName += 25
+      varName -= 25
+      varName *= 25
+      varName /= 25
+
+     Math functions
+       abs(value) => get the absolute value
+       pow(value, pow) 
+       sqrt(value) 
+       max(value1, value2)
+       min(value1, value2)
+       round(value) => round closer value
+       ceil(value) => always round up
+       floor(value) => always round down
+       ...
+       ...
+       

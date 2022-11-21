@@ -1,0 +1,35 @@
+Arrays in php
+    Types of arrays
+     1. Indexed arrays
+       - This is normal arry we just define using array() function in which every 
+         position we place our elements!
+         e.g $friends = array("Harold", "Carolina", "Miguel");
+       - To index this array we use numbers from 0 e.g $friends[0]
+     2. Associative arrays
+       - This array is analog of "dictionary" or hashMap. We place a set of key/value pairs
+         e.g $family = array("Harold" => "Father", "Carolina" => "Mother", "Miguel" => "Son" );
+       - To index this array we use the key e.g $family["Harold"]
+     3. Multidimensional arrays
+       - This is just an array of >3n. Where we can assoaciate multiple values. In other 
+         words are just high-level arrays
+       - To define this kind of arrays, we just nest array inside another arrays() calls
+         e.g $cars = array (
+                            array("Volvo",22,18),
+                            array("BMW",15,13),
+                            ...=
+
+
+    count() function:
+     - This returns the length of an array
+    
+    Indexing arrays:
+     - We can index our arrays just using square brackets. The index 
+
+-- example 
+<?php 
+    $family = array("Harold" => "Father", "Carolina" => "Mother", "Miguel" => "Son" );
+    $family["Harold"] = "Dad";
+    // echo $family["Harold"];
+    // echo  count($family);
+    echo $family[$_POST["name"]];
+?>

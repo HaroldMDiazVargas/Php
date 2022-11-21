@@ -1,0 +1,24 @@
+Functions
+    Declaration:
+     - We can declare our functions with zero or more arguments, and also 
+       returning or not a value
+     - The arguments need to be variables(have $)
+    
+-- example
+
+<?php 
+    function sayHi($name, $age){
+        echo "Hello $name, you are $age <br>";
+    }
+
+    sayHi("Harold", 25);
+    sayHi("Carolina", 26);
+    sayHi("Miguel", 1);
+
+    function cube($num){
+        return $num * $num * $num;
+    }
+
+    $cubeResult = cube(2);
+    echo $cubeResult;
+?>

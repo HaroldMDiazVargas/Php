@@ -1,0 +1,15 @@
+Installation    
+    Windows
+      - We just download the file from the official website safe version!
+      - Unzip the files in a folder, e.g c:/php
+      - config windows path variable to tell windows that php is inside that 
+        custom folder:
+        - search for environment variables => open the tab
+        - Variable: Path => click and edit => add new variable => C:\php !
+        Check the environment variables in terminal:
+         - C:\Users\USUARIO>echo %PATH%
+
+    Check php Installation
+      - Restart terminal or open a new one
+        php -v 
+

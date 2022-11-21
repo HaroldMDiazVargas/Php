@@ -1,0 +1,53 @@
+Control flow
+    If ..elif..else
+    Switch statement
+
+    These are very intuitive!
+
+-- php file
+
+<body>
+
+    
+    <?php 
+
+        //  IF
+       $isMale = true;
+       $isTall = false;
+       if($isMale && $isTall){ // || && !value < > <= >= ==  !=   
+        echo "You are a tall male";
+       } elseif($isMale && !$isTall) {
+        echo "You are a male and not tall";
+       } elseif(!$isMale && $isTall){
+        echo "You are tall but not a male";
+       } else
+       {
+        echo "You are not male neither tall person";
+       }
+
+    ?>
+    <form action="site.php" method="post">
+        <label for="grade">Grade</label>
+        <input type="text" name="grade" id="grade">
+        <button type="submit">Btn</button>
+    </form>
+
+    <?php
+    $grade = $_POST["grade"];
+    // Switch case 
+
+    switch($grade){
+        case "A":
+            echo "You did amazing";
+            break;
+        case "B":
+            echo "you did well";
+            break;
+        default:
+            echo "Invalid Grade";  
+            
+    }   
+    ?>
+    
+
+</body>

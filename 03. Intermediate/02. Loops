@@ -1,0 +1,52 @@
+Loops
+    - For
+    - While
+    - Do..while
+    - for..each
+
+-- php file
+<body>
+
+    
+    <?php 
+
+        //----------------------------------------
+        $index = 0;
+       
+       while($index <= 5){
+        echo "$index";
+        $index++;
+       }
+       echo "<br>";
+       
+       //----------------------------------------
+       $index = 0;
+       do{
+        echo "$index";
+        $index++;
+       } while($index <= 5);
+
+        //----------------------------------------
+        echo "<br>";
+        for($i = 0; $i < 5; $i++){
+            echo $i;
+        }
+        echo "<br>";
+        $luckyNumbers = array(4, 8 , 14, 16, 23, 42);
+        
+        for($i=0; $i <= count($luckyNumbers); $i++){
+            echo $luckyNumbers[$i];
+        }
+
+        //------------------------------------------
+        $colors = array("red", "green", "blue", "yellow");
+
+        foreach ($colors as $value) {
+            echo "$value <br>";
+        }
+
+    ?>
+    
+    
+
+</body>

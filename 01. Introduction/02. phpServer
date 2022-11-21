@@ -1,0 +1,19 @@
+php server
+    Definition:
+      - When we run php we have to run php on a web server
+      - This means php is a server-side languages, in order to interact with our websites
+      - server comes with php
+    
+    Create a web server:
+      - We can run in our console:
+        ❯ php -S localhost:4000
+        This will create a little web server for us in order to run our php files
+
+    Execution step:
+      - Whenever we refresh our page(localhost:4000), the web server will execute 
+        the php code in sequence!
+
+-- console 
+❯ php -S localhost:4000
+[Fri Nov 18 11:17:10 2022] PHP 8.1.12 Development Server (http://localhost:4000) started
+

@@ -1,0 +1,51 @@
+Cookies
+    Definition:
+     - We use cookies often to identify a user. Cookie is a small file that the server
+       embeds on the user's computer.
+     - Each time the same computer requests a page with a browser, it will send the cookie too
+     
+    Php cookies:
+     - With php we can:
+       - create cookie values
+       - retrieve cookie values
+    
+    setcookie() function:
+     - This takes => setcookie(name, value, expire, path, domain, secure, httponly);
+     - Only the name param is required
+    
+    Note: The setcookie() function must appear BEFORE the <html> tag.
+
+    We can also:
+     - Check if cookie is enable
+     - delete a cookie
+     - modify a cookie
+
+    cookies vs localStorage:
+     - cookies are intended to be read by the server, but also can be read by 
+       browser of course
+     - localStorage are only read by the browser
+
+-- php file 
+
+<?php
+$cookie_name = "user";
+$cookie_value = "John Doe";
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+?>
+<html lang="en">
+
+<body>
+
+
+
+<?php
+if(!isset($_COOKIE[$cookie_name])) {
+  echo "Cookie named '" . $cookie_name . "' is not set!";
+} else {
+  echo "Cookie '" . $cookie_name . "' is set!<br>";
+  echo "Value is: " . $_COOKIE[$cookie_name];
+}
+?>
+
+</body>
+</html>

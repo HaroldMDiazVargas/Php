@@ -1,0 +1,38 @@
+Working with strings
+    Definition:
+      - This is the most used data type through our php apps
+    
+    Functions:
+      strtolower()  =>This funcion takes a string and converts to lowercase
+      strtoupper()  => converts to lowercase
+      strlen()      => String length
+      str_replace(substrNew, substrOld, string) => Return a new string with replacements
+      substr(string, startIndx, #characters) 
+      ...
+      ...
+
+    Index sting:
+      - We can index a specific character of our string just using square brackets
+       e.g $phrase[0] => get 1st character of our string
+           $phrase[1] => get 2nd character of our string
+    
+-- site.php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php 
+        $phrase = "this is my logo";
+        str_replace("this", "This", $phrase);
+        echo strtolower($phrase);
+        echo strlen($phrase);
+        echo $phrase[1];
+        
+    ?>
+</body>
+</html>

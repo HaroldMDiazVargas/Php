@@ -1,0 +1,19 @@
+Include Html
+    Definition:
+     - We can include our html code in our .php file. So we can define templates
+       using html elements in external files and include in .php file
+     - This helps us to break down our app
+    
+    include or require keyword:
+     - We use this keyword to include all code of external html
+     - use either include or require will have the same effect
+
+-- php file 
+
+<body>
+
+    <?php include "header.html"?>
+    <p>Hello world</p>
+    <?php include "footer.html" ?>
+
+</body>

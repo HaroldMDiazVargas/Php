@@ -1,0 +1,43 @@
+php sessions  
+    Session variables:
+     - Store user info to be used across multiple pages such us:
+       - username, color, etc
+     - These last until the user closes the browser
+
+    Start a php session:
+     - We use the "session_start()" function 
+     - This must be before any HTML tags
+
+    Define session variables:
+     - We use php global variable $_SESSION["varName"]=value;
+    
+    Get session variables:
+     - We can get just using $_SESSION["varName"]
+    
+    Remove php session:
+     - We use session_unset() and session_destroy() functions to remove all
+       global sessiond variables and destroy the session
+
+
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <?php
+    $_SESSION["color1"]="blue";
+    $_SESSION["color2"]="yellow";
+    $_SESSION["color3"]="red";
+
+    print_r($_SESSION);
+  ?>
+  
+</body>
+</html>

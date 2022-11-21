@@ -1,0 +1,34 @@
+POST Method forms
+    Definition:
+     - In these kind of method to send data, we send our data normally in our body 
+       of the request(client-side). So in our server-side we read these in a more 
+       private way:
+       - In php we use $_POST[]
+       - In node.js we use req.body
+       - ...
+    
+<body>
+    
+    <form action="site.php" method="post">
+        <label for="color">Color</label>
+        <input type="text" name="color" id="color">
+        <label for="pluralNoun">Plural Noun</label>
+        <input type="text" name="pluralNoun" id="pluralNoun">
+        <label for="celebrity">Celebrity</label>
+        <input type="text" name="celebrity" id="celebrity">
+        <button type="submit">Result</button>
+    </form>
+    
+    <br></br>
+    <?php 
+    $color = $_POST['color'];
+    $pluralNoun = $_POST['pluralNoun'];
+    $celebrity = $_POST['celebrity'];
+    echo "Roses are $color <br>";
+    echo "$pluralNoun  are blue <br>";
+    echo "I love $celebrity  <br>";
+
+    ?>
+    
+
+</body>   

@@ -1,0 +1,9 @@
+Final keyword:
+    Definition:
+     - We maybe want to avoid oiverride a method or inhertiance a class
+     - For this we can use the "final" keyword
+
+    final keyword:
+     - We 
+     e.g final function methodName() 
+          final class className{}
